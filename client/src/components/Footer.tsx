@@ -10,7 +10,15 @@ export default function Footer() {
           <div className="xl:col-span-1">
             <div className="mb-6">
               <Link href="/" className="flex items-center">
-                <img src="/logo-new.png" alt="LumeWeb Studios Logo" className="h-12 w-auto" style={{ maxHeight: '50px' }} />
+                <img 
+                  src="/logo-transparent.png" 
+                  alt="LumeWeb Studios Logo" 
+                  className="h-10 w-auto" 
+                  style={{ 
+                    maxHeight: '45px',
+                    objectFit: 'contain'
+                  }} 
+                />
               </Link>
             </div>
             <div className="space-y-3 mb-6">

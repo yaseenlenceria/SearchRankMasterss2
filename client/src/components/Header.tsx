@@ -23,7 +23,15 @@ export default function Header() {
           {/* Logo */}
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <Link href="/" className="flex items-center">
-              <img src="/logo-new.png" alt="LumeWeb Studios Logo" className="h-12 w-auto" style={{ maxHeight: '50px' }} />
+              <img 
+                src="/logo-transparent.png" 
+                alt="LumeWeb Studios Logo" 
+                className="h-10 w-auto md:h-12" 
+                style={{ 
+                  maxHeight: '50px',
+                  objectFit: 'contain'
+                }} 
+              />
             </Link>
           </div>
           
