@@ -17,7 +17,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 bg-white shadow-md z-50">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4 md:justify-start md:space-x-10">
           {/* Logo */}
           <div className="flex justify-start lg:w-0 lg:flex-1">
@@ -47,7 +47,7 @@ export default function Header() {
               </button>
 
               {/* Services Dropdown */}
-              <div className="hidden group-hover:block absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
+              <div className="hidden group-hover:block absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2" style={{zIndex: 1000}}>
                 <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
                   <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-6 sm:p-8 grid-cols-2">
                     <Link href="/best-los-angeles-web-design" className="flex items-start rounded-lg hover:bg-gray-100 px-3 py-2">
@@ -134,7 +134,7 @@ export default function Header() {
               </button>
 
               {/* Industries Dropdown */}
-              <div className="hidden group-hover:block absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
+              <div className="hidden group-hover:block absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2" style={{zIndex: 1000}}>
                 <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
                   <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                     <Link href="/best-los-angeles-industries-legal" className="flex items-start rounded-lg hover:bg-gray-100 px-3 py-2">
@@ -209,7 +209,7 @@ export default function Header() {
                 <ChevronDown className="ml-1 h-4 w-4" />
               </button>
 
-              <div className="hidden group-hover:block absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
+              <div className="hidden group-hover:block absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2" style={{zIndex: 1000}}>
                 <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
                   <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                     <Link href="/best-los-angeles-free-site-audit" className="flex items-start rounded-lg hover:bg-gray-100 px-3 py-2">
@@ -241,6 +241,22 @@ export default function Header() {
                       <div className="ml-4">
                         <p className="text-base font-medium text-gray-800">Check My Project</p>
                         <p className="mt-1 text-sm text-gray-600">Get expert feedback</p>
+                      </div>
+                    </Link>
+                    
+                    <Link href="/best-los-angeles-disclaimer" className="flex items-start rounded-lg hover:bg-gray-100 px-3 py-2">
+                      <FileText className="mt-1 text-primary h-5 w-5" />
+                      <div className="ml-4">
+                        <p className="text-base font-medium text-gray-800">Disclaimer</p>
+                        <p className="mt-1 text-sm text-gray-600">Legal information</p>
+                      </div>
+                    </Link>
+                    
+                    <Link href="/best-los-angeles-privacy-policy" className="flex items-start rounded-lg hover:bg-gray-100 px-3 py-2">
+                      <FileText className="mt-1 text-primary h-5 w-5" />
+                      <div className="ml-4">
+                        <p className="text-base font-medium text-gray-800">Privacy Policy</p>
+                        <p className="mt-1 text-sm text-gray-600">How we protect your data</p>
                       </div>
                     </Link>
                   </div>
