@@ -7,7 +7,6 @@ import {
   BarChart, CheckCircle, Globe, Code, Phone
 } from "lucide-react";
 
-
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [location] = useLocation();
@@ -23,15 +22,7 @@ export default function Header() {
           {/* Logo */}
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <Link href="/" className="flex items-center">
-              <img 
-                src="/logo-transparent.png" 
-                alt="LumeWeb Studios Logo" 
-                className="h-10 w-auto md:h-12" 
-                style={{ 
-                  maxHeight: '50px',
-                  objectFit: 'contain'
-                }} 
-              />
+              <span className="text-2xl font-bold text-primary">Lume<span className="text-teal-500">Web</span> Studios</span>
             </Link>
           </div>
           

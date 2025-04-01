@@ -1,7 +1,6 @@
 import { Link } from "wouter";
 import { Mail, Phone, MapPin } from "lucide-react";
 
-
 export default function Footer() {
   return (
     <footer className="bg-gray-900 text-white">
@@ -9,16 +8,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-8">
           <div className="xl:col-span-1">
             <div className="mb-6">
-              <Link href="/" className="flex items-center">
-                <img 
-                  src="/logo-transparent.png" 
-                  alt="LumeWeb Studios Logo" 
-                  className="h-10 w-auto" 
-                  style={{ 
-                    maxHeight: '45px',
-                    objectFit: 'contain'
-                  }} 
-                />
+              <Link href="/" className="text-2xl font-bold text-white">
+                Lume<span className="text-teal-500">Web</span> Studios
               </Link>
             </div>
             <div className="space-y-3 mb-6">
