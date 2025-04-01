@@ -33,7 +33,7 @@ export default function MainLayout({
       
       {showBreadcrumbs && <Breadcrumbs items={breadcrumbs} />}
       
-      <main>
+      <main className="w-full max-w-[1440px] mx-auto">
         {children}
       </main>
       

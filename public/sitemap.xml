@@ -40,6 +40,44 @@
     <priority>0.8</priority>
   </url>
   
+  <!-- Company Pages -->
+  <url>
+    <loc>https://lumewebstudios.com/best-los-angeles-about-us</loc>
+    <lastmod>2025-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lumewebstudios.com/best-los-angeles-why-los-angeles-seo</loc>
+    <lastmod>2025-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lumewebstudios.com/best-los-angeles-customer-support</loc>
+    <lastmod>2025-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lumewebstudios.com/best-los-angeles-orange-county</loc>
+    <lastmod>2025-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lumewebstudios.com/best-los-angeles-industries-we-serve</loc>
+    <lastmod>2025-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lumewebstudios.com/best-los-angeles-web-design-agency</loc>
+    <lastmod>2025-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
   <!-- Service Pages -->
   <url>
     <loc>https://lumewebstudios.com/best-los-angeles-web-design</loc>
@@ -146,5 +184,19 @@
     <lastmod>2025-04-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+  </url>
+  
+  <!-- Legal Pages -->
+  <url>
+    <loc>https://lumewebstudios.com/best-los-angeles-disclaimer</loc>
+    <lastmod>2025-04-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://lumewebstudios.com/best-los-angeles-privacy-policy</loc>
+    <lastmod>2025-04-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 </urlset>

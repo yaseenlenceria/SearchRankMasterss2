@@ -1,20 +1,42 @@
 import { Link } from "wouter";
+import { Mail, Phone, MapPin } from "lucide-react";
 
 export default function Footer() {
   return (
     <footer className="bg-gray-900 text-white">
-      <div className="container mx-auto px-4 pt-16 pb-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-6 gap-8">
-          <div className="xl:col-span-2">
+      <div className="container max-w-[1440px] mx-auto px-4 pt-16 pb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-8">
+          <div className="xl:col-span-1">
             <div className="mb-6">
               <Link href="/" className="text-2xl font-bold text-white">
                 Lume<span className="text-teal-500">Web</span> Studios
               </Link>
             </div>
-            <p className="text-gray-400 mb-6">
-              Premium web design and digital marketing solutions for Los Angeles businesses. We help businesses create stunning, 
-              high-performing websites and digital marketing campaigns that attract customers and drive growth.
-            </p>
+            <div className="space-y-3 mb-6">
+              <div className="flex items-start">
+                <Phone className="h-5 w-5 text-teal-500 mr-2 flex-shrink-0 mt-0.5" />
+                <a href="tel:+13238410348" className="text-gray-300 hover:text-teal-500">
+                  +1 (323) 841-0348
+                </a>
+              </div>
+              <div className="flex items-start">
+                <Mail className="h-5 w-5 text-teal-500 mr-2 flex-shrink-0 mt-0.5" />
+                <a href="mailto:info@lumewebstudios.com" className="text-gray-300 hover:text-teal-500">
+                  info@lumewebstudios.com
+                </a>
+              </div>
+              <div className="flex items-start">
+                <MapPin className="h-5 w-5 text-teal-500 mr-2 flex-shrink-0 mt-0.5" />
+                <a 
+                  href="https://g.co/kgs/sFASq8u" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-gray-300 hover:text-teal-500"
+                >
+                  10880 Wilshire Blvd, Los Angeles, CA 90024
+                </a>
+              </div>
+            </div>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-teal-500">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" className="h-5 w-5 fill-current">
@@ -63,8 +85,13 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/best-los-angeles-woocommerce-web-design" className="text-gray-400 hover:text-teal-500">
-                  WooCommerce Web Design
+                <Link href="/best-los-angeles-web-design-agency" className="text-gray-400 hover:text-teal-500">
+                  Web Design Agency
+                </Link>
+              </li>
+              <li>
+                <Link href="/best-los-angeles-orange-county" className="text-gray-400 hover:text-teal-500">
+                  Orange County
                 </Link>
               </li>
             </ul>
@@ -84,8 +111,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/best-los-angeles-seo-audit" className="text-gray-400 hover:text-teal-500">
-                  SEO Audit
+                <Link href="/best-los-angeles-why-los-angeles-seo" className="text-gray-400 hover:text-teal-500">
+                  Why Los Angeles SEO
                 </Link>
               </li>
               <li>
@@ -94,39 +121,39 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/best-los-angeles-seo-for-small-businesses" className="text-gray-400 hover:text-teal-500">
-                  Small Business SEO
+                <Link href="/best-los-angeles-industries-we-serve" className="text-gray-400 hover:text-teal-500">
+                  Industries We Serve
                 </Link>
               </li>
             </ul>
           </div>
           
           <div>
-            <h4 className="text-lg font-semibold mb-4">Industries</h4>
+            <h4 className="text-lg font-semibold mb-4">Company</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/best-los-angeles-industries-legal" className="text-gray-400 hover:text-teal-500">
-                  Legal & Law Firms
+                <Link href="/best-los-angeles-about-us" className="text-gray-400 hover:text-teal-500">
+                  About Us
                 </Link>
               </li>
               <li>
-                <Link href="/best-los-angeles-industries-health" className="text-gray-400 hover:text-teal-500">
-                  Healthcare Providers
+                <Link href="/best-los-angeles-case-studies" className="text-gray-400 hover:text-teal-500">
+                  Case Studies
                 </Link>
               </li>
               <li>
-                <Link href="/best-los-angeles-industries-finance" className="text-gray-400 hover:text-teal-500">
-                  Financial Services
+                <Link href="/best-los-angeles-customer-support" className="text-gray-400 hover:text-teal-500">
+                  Customer Support
                 </Link>
               </li>
               <li>
-                <Link href="/best-los-angeles-industries-home-repair-roofing" className="text-gray-400 hover:text-teal-500">
-                  Home Services
+                <Link href="/best-los-angeles-contact-us" className="text-gray-400 hover:text-teal-500">
+                  Contact Us
                 </Link>
               </li>
               <li>
-                <Link href="/best-los-angeles-industries" className="text-gray-400 hover:text-teal-500">
-                  View All Industries
+                <Link href="/best-los-angeles-free-site-audit" className="text-gray-400 hover:text-teal-500">
+                  Free Site Audit
                 </Link>
               </li>
             </ul>
@@ -136,18 +163,13 @@ export default function Footer() {
             <h4 className="text-lg font-semibold mb-4">Resources</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/best-los-angeles-case-studies" className="text-gray-400 hover:text-teal-500">
-                  Case Studies
+                <Link href="/best-los-angeles-disclaimer" className="text-gray-400 hover:text-teal-500">
+                  Disclaimer
                 </Link>
               </li>
               <li>
-                <Link href="/best-los-angeles-free-site-audit" className="text-gray-400 hover:text-teal-500">
-                  Free Site Audit
-                </Link>
-              </li>
-              <li>
-                <Link href="/best-los-angeles-competitive-analysis" className="text-gray-400 hover:text-teal-500">
-                  Competitive Analysis
+                <Link href="/best-los-angeles-privacy-policy" className="text-gray-400 hover:text-teal-500">
+                  Privacy Policy
                 </Link>
               </li>
               <li>
@@ -156,8 +178,13 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/best-los-angeles-check-my-project" className="text-gray-400 hover:text-teal-500">
-                  Check My Project
+                <Link href="/best-los-angeles-competitive-analysis" className="text-gray-400 hover:text-teal-500">
+                  Competitive Analysis
+                </Link>
+              </li>
+              <li>
+                <Link href="/best-los-angeles-industries" className="text-gray-400 hover:text-teal-500">
+                  All Industries
                 </Link>
               </li>
             </ul>
@@ -167,27 +194,31 @@ export default function Footer() {
         <div className="mt-12 pt-8 border-t border-gray-800 md:flex md:items-center md:justify-between">
           <div className="text-gray-400 text-sm">
             <p>&copy; {new Date().getFullYear()} LumeWeb Studios. All rights reserved.</p>
-            <p className="mt-2">10880 Wilshire Blvd, Los Angeles, CA 90024</p>
+            <p className="mt-2">
+              <a 
+                href="https://g.co/kgs/sFASq8u" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="hover:text-teal-500"
+              >
+                10880 Wilshire Blvd, Los Angeles, CA 90024
+              </a>
+            </p>
           </div>
           <div className="mt-4 md:mt-0">
-            <ul className="flex flex-wrap space-x-6 justify-center md:justify-end">
+            <ul className="flex flex-wrap gap-4 md:gap-6 justify-center md:justify-end">
               <li>
-                <Link href="/best-los-angeles-offering-nationwide-potential-clients" className="text-gray-400 hover:text-teal-500 text-sm">
+                <Link href="/best-los-angeles-services-nationwide" className="text-gray-400 hover:text-teal-500 text-sm">
                   Nationwide Services
                 </Link>
               </li>
               <li>
-                <Link href="/best-los-angeles-successful-website-for-your-business" className="text-gray-400 hover:text-teal-500 text-sm">
-                  Website Success Guide
+                <Link href="/best-los-angeles-seo-for-small-businesses" className="text-gray-400 hover:text-teal-500 text-sm">
+                  Small Business
                 </Link>
               </li>
               <li>
-                <Link href="/best-los-angeles-proven-results-marketing-agency" className="text-gray-400 hover:text-teal-500 text-sm">
-                  Our Results
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact-us" className="text-gray-400 hover:text-teal-500 text-sm">
+                <Link href="/best-los-angeles-contact-us" className="text-gray-400 hover:text-teal-500 text-sm">
                   Contact Us
                 </Link>
               </li>

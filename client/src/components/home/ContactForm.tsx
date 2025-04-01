@@ -122,8 +122,8 @@ export default function ContactForm() {
                     </div>
                     <div>
                       <h4 className="text-gray-900 font-medium mb-1">Phone</h4>
-                      <a href="tel:+13105551234" className="text-primary hover:text-teal-600 transition-colors">
-                        (310) 555-1234
+                      <a href="tel:+13238410348" className="text-primary hover:text-teal-600 transition-colors">
+                        (323) 841-0348
                       </a>
                     </div>
                   </div>

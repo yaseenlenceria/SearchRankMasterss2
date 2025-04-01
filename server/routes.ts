@@ -1,9 +1,22 @@
-import type { Express } from "express";
+import type { Express, Request, Response } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { contactFormSchema } from "@shared/schema";
 import { ZodError } from "zod";
 import { fromZodError } from "zod-validation-error";
+
+// Mock function to simulate sending an email notification
+// In a production environment, this would use a proper email service like SendGrid, Mailgun, etc.
+async function sendEmailNotification(formData: any, recipients: string[]) {
+  console.log(`[EMAIL NOTIFICATION] Would send email to: ${recipients.join(', ')}`);
+  console.log(`[EMAIL NOTIFICATION] Form data: ${JSON.stringify(formData, null, 2)}`);
+  
+  // Return success for now - in production, this would return the email service's response
+  return {
+    success: true,
+    message: `Email notification would be sent to ${recipients.join(', ')}`
+  };
+}
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // Contact form submission endpoint
@@ -14,6 +27,23 @@ export async function registerRoutes(app: Express): Promise<Server> {
       
       // Store contact submission
       const contactSubmission = await storage.createContactSubmission(validatedData);
+      
+      // Define email recipients
+      const emailRecipients = [
+        'info@lumewebstudios.com', 
+        'yaseenlenceria@gmail.com', 
+        'claude@claudekameni.com'
+      ];
+      
+      // Send email notification
+      try {
+        const emailNotification = await sendEmailNotification(validatedData, emailRecipients);
+        console.log(`Email notification status: ${emailNotification.success ? 'Success' : 'Failed'}`);
+      } catch (emailError) {
+        console.error("Failed to send email notification:", emailError);
+        // We don't want to fail the request if only email sending fails
+        // But we log it for debugging
+      }
       
       // Return success response
       res.status(201).json({
