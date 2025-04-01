@@ -471,5 +471,148 @@ export const services: Service[] = [
         ]
       }
     ]
+  },
+  {
+    id: 11,
+    slug: "wedding-celebrants-website-design",
+    title: "Wedding Celebrants Website Design",
+    shortDescription: "Custom websites for wedding celebrants to showcase services and attract clients.",
+    metaDescription: "Professional website design for wedding celebrants in Los Angeles. Showcase your ceremony services, attract more clients, and grow your celebrant business with a custom website.",
+    heroDescription: "Elegantly showcase your wedding ceremony services with a custom website designed to connect with couples planning their special day.",
+    heroImage: "https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    contentTitle: "Website Design Services for Wedding Celebrants",
+    contentSections: [
+      {
+        title: "Specialized Design for Wedding Celebrants",
+        content: "We create beautiful, conversion-focused websites specifically tailored to showcase wedding celebrant services and connect with couples planning their ceremony.",
+        listItems: [
+          "Elegant designs that reflect the emotional significance of your work",
+          "Portfolio sections to showcase your ceremony styles and past weddings",
+          "Testimonial features to highlight positive experiences from married couples",
+          "Service packages and pricing presentation",
+          "Ceremony type descriptions and customization options",
+          "Easy booking and inquiry systems"
+        ]
+      },
+      {
+        title: "Marketing Solutions for Celebrants",
+        content: "Beyond creating a stunning website, we implement targeted marketing strategies to help wedding celebrants attract more clients and grow their business.",
+        listItems: [
+          "SEO optimization for wedding and ceremony-related searches",
+          "Content marketing focused on wedding planning and ceremonies",
+          "Local SEO to target couples in your service area",
+          "Integration with wedding planning platforms and directories",
+          "Social media strategy for platforms popular with engaged couples",
+          "Review management to build your online reputation"
+        ]
+      },
+      {
+        title: "Wedding Industry Expertise",
+        content: "We understand the unique needs of professionals in the wedding industry and create digital solutions that showcase your services effectively.",
+        listItems: [
+          "Experience working with wedding professionals across Los Angeles",
+          "Understanding of wedding industry trends and client expectations",
+          "Knowledge of effective conversion strategies for engaged couples",
+          "Awareness of seasonal marketing opportunities in the wedding industry",
+          "Integration with wedding planning tools and scheduling systems"
+        ]
+      }
+    ]
+  },
+  {
+    id: 12,
+    slug: "music-band-website-design",
+    title: "Music Band Website Design",
+    shortDescription: "Dynamic websites for music bands to showcase music, tours, and connect with fans.",
+    metaDescription: "Professional website design for music bands in Los Angeles. Showcase your music, announce tour dates, sell merchandise, and grow your fan base with a custom band website.",
+    heroDescription: "Create an online presence that showcases your music, builds your fan base, and helps you promote your performances.",
+    heroImage: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    contentTitle: "Website Design Services for Music Bands",
+    contentSections: [
+      {
+        title: "Music-Focused Web Design",
+        content: "We design websites specifically for musicians and bands that effectively showcase your music and help you connect with fans and industry professionals.",
+        listItems: [
+          "Music streaming and media players integration",
+          "Tour date listings with ticketing integration",
+          "EPK (Electronic Press Kit) features",
+          "Photo and video galleries",
+          "Merchandise store capabilities",
+          "Mobile-responsive design for fans on the go"
+        ]
+      },
+      {
+        title: "Fan Engagement Features",
+        content: "Our music band websites include features designed to help you grow and engage with your fan base effectively.",
+        listItems: [
+          "Newsletter sign-up and fan club features",
+          "Social media integration across platforms",
+          "Blog/news sections for band updates",
+          "Event announcements and RSVP capabilities",
+          "Fan community features and forums",
+          "Contact forms for booking and press inquiries"
+        ]
+      },
+      {
+        title: "Music Industry Marketing",
+        content: "We implement targeted marketing strategies to help bands increase visibility, attract new listeners, and promote their music effectively.",
+        listItems: [
+          "SEO optimization for music-related searches",
+          "Content strategy for musicians and bands",
+          "Social media marketing for music promotion",
+          "Email marketing for tour announcements and releases",
+          "Music platform integration (Spotify, Apple Music, SoundCloud)",
+          "Analytics to track fan engagement and site performance"
+        ]
+      }
+    ]
+  },
+  {
+    id: 13,
+    slug: "small-business-website-development",
+    title: "Small Business Website Development",
+    shortDescription: "Affordable, professional websites tailored for small business success in Los Angeles.",
+    metaDescription: "Professional website development for small businesses in Los Angeles. Get an affordable, high-quality website that drives growth for your local business.",
+    heroDescription: "Give your small business the online presence it deserves with a professional website designed to attract customers and grow your business.",
+    heroImage: "https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    contentTitle: "Website Development for Small Businesses",
+    contentSections: [
+      {
+        title: "Small Business Web Solutions",
+        content: "We create affordable, professional websites tailored specifically to the needs and budget constraints of small businesses in Los Angeles.",
+        listItems: [
+          "Cost-effective web design packages",
+          "Easy-to-update content management systems",
+          "Mobile-friendly responsive designs",
+          "Local business features and integrations",
+          "Simple online scheduling and inquiry forms",
+          "Basic e-commerce capabilities for product sales"
+        ]
+      },
+      {
+        title: "Local Business Marketing",
+        content: "Our small business websites include essential marketing features to help you compete effectively in your local market.",
+        listItems: [
+          "Local SEO optimization for Los Angeles neighborhoods",
+          "Google Business Profile integration",
+          "Customer review features and management",
+          "Location and service area mapping",
+          "Local content strategy and implementation",
+          "Social media integration for local marketing"
+        ]
+      },
+      {
+        title: "Growth-Focused Websites",
+        content: "We build small business websites with growth in mind, creating a foundation that can evolve as your business expands.",
+        listItems: [
+          "Scalable website architecture",
+          "Analytics setup for business insights",
+          "Conversion optimization for lead generation",
+          "Customer relationship management integration",
+          "Ongoing support and maintenance options",
+          "Future expansion capabilities as your business grows"
+        ]
+      }
+    ]
   }
 ];

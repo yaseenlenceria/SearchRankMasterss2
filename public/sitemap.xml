@@ -1,141 +1,172 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Homepage -->
   <url>
     <loc>https://lumewebstudios.com/</loc>
-    <lastmod>2023-04-01</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+  
+  <!-- Main Pages -->
   <url>
-    <loc>https://lumewebstudios.com/best-los-angeles-web-design</loc>
-    <lastmod>2023-04-01</lastmod>
+    <loc>https://lumewebstudios.com/contact</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lumewebstudios.com/free-seo-audit</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://lumewebstudios.com/best-los-angeles-search-engine-optimization</loc>
-    <lastmod>2023-04-01</lastmod>
+    <loc>https://lumewebstudios.com/competitive-analysis</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://lumewebstudios.com/best-los-angeles-local-seo</loc>
-    <lastmod>2023-04-01</lastmod>
+    <loc>https://lumewebstudios.com/request-for-proposal</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lumewebstudios.com/best-los-angeles-content-marketing</loc>
-    <lastmod>2023-04-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://lumewebstudios.com/best-los-angeles-social-media-marketing</loc>
-    <lastmod>2023-04-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://lumewebstudios.com/best-los-angeles-conversion-rate-optimization</loc>
-    <lastmod>2023-04-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://lumewebstudios.com/best-los-angeles-ppc-management</loc>
-    <lastmod>2023-04-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://lumewebstudios.com/best-los-angeles-industries</loc>
-    <lastmod>2023-04-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://lumewebstudios.com/best-los-angeles-industries-legal</loc>
-    <lastmod>2023-04-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://lumewebstudios.com/best-los-angeles-industries-health</loc>
-    <lastmod>2023-04-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://lumewebstudios.com/best-los-angeles-industries-finance</loc>
-    <lastmod>2023-04-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://lumewebstudios.com/best-los-angeles-industries-education-colleges</loc>
-    <lastmod>2023-04-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://lumewebstudios.com/best-los-angeles-industries-professional-services</loc>
-    <lastmod>2023-04-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://lumewebstudios.com/best-los-angeles-case-studies</loc>
-    <lastmod>2023-04-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://lumewebstudios.com/best-los-angeles-free-site-audit</loc>
-    <lastmod>2023-04-01</lastmod>
+    <loc>https://lumewebstudios.com/industries-we-serve</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://lumewebstudios.com/best-los-angeles-seo-audit</loc>
-    <lastmod>2023-04-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://lumewebstudios.com/best-los-angeles-competitive-analysis</loc>
-    <lastmod>2023-04-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://lumewebstudios.com/best-los-angeles-check-my-project</loc>
-    <lastmod>2023-04-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://lumewebstudios.com/contact-us</loc>
-    <lastmod>2023-04-01</lastmod>
+    <loc>https://lumewebstudios.com/case-studies</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://lumewebstudios.com/best-los-angeles-request-for-proposal</loc>
-    <lastmod>2023-04-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://lumewebstudios.com/best-los-angeles-disclaimer</loc>
-    <lastmod>2023-04-01</lastmod>
+    <loc>https://lumewebstudios.com/privacy-policy</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://lumewebstudios.com/best-los-angeles-privacy-policy</loc>
-    <lastmod>2023-04-01</lastmod>
+    <loc>https://lumewebstudios.com/disclaimer</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
+  </url>
+  
+  <!-- Service Pages -->
+  <url>
+    <loc>https://lumewebstudios.com/services/web-design</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lumewebstudios.com/services/search-engine-optimization</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lumewebstudios.com/services/content-marketing</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lumewebstudios.com/services/local-seo</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lumewebstudios.com/services/conversion-rate-optimization</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lumewebstudios.com/services/social-media-marketing</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lumewebstudios.com/services/web-development</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lumewebstudios.com/services/ecommerce-development</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lumewebstudios.com/services/wordpress-development</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lumewebstudios.com/services/shopify-development</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lumewebstudios.com/services/wedding-celebrants-website-design</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lumewebstudios.com/services/music-band-website-design</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lumewebstudios.com/services/small-business-website-development</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Industry Pages -->
+  <url>
+    <loc>https://lumewebstudios.com/industries/healthcare</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lumewebstudios.com/industries/legal</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lumewebstudios.com/industries/ecommerce</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lumewebstudios.com/industries/real-estate</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lumewebstudios.com/industries/professional-services</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lumewebstudios.com/industries/home-services</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lumewebstudios.com/industries/hospitality</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Case Studies -->
+  <url>
+    <loc>https://lumewebstudios.com/case-studies/losangeles-law-firm</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lumewebstudios.com/case-studies/healthcare-provider</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lumewebstudios.com/case-studies/ecommerce-retailer</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>

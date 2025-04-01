@@ -79,24 +79,7 @@ export default function Hero() {
           </div>
         </div>
         
-        {/* Trusted by section */}
-        <div className="mt-12 md:mt-16 text-center">
-          <p className="text-gray-300 mb-4 md:mb-6 text-sm uppercase tracking-widest">Trusted by Los Angeles businesses</p>
-          <div className="flex flex-wrap justify-center gap-4 sm:gap-8 md:gap-16 opacity-80">
-            <div className="w-20 sm:w-24 h-10 sm:h-12 bg-white rounded flex items-center justify-center">
-              <span className="font-bold text-gray-700 text-xs sm:text-sm">LOGO 1</span>
-            </div>
-            <div className="w-20 sm:w-24 h-10 sm:h-12 bg-white rounded flex items-center justify-center">
-              <span className="font-bold text-gray-700 text-xs sm:text-sm">LOGO 2</span>
-            </div>
-            <div className="w-20 sm:w-24 h-10 sm:h-12 bg-white rounded flex items-center justify-center">
-              <span className="font-bold text-gray-700 text-xs sm:text-sm">LOGO 3</span>
-            </div>
-            <div className="w-20 sm:w-24 h-10 sm:h-12 bg-white rounded flex items-center justify-center">
-              <span className="font-bold text-gray-700 text-xs sm:text-sm">LOGO 4</span>
-            </div>
-          </div>
-        </div>
+
       </div>
     </section>
   );

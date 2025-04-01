@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 import { 
   Laptop, Search, PenTool, MapPin, BarChart2, Zap, Users, 
   ChevronDown, Menu, X, LayoutGrid, FileText, MessageSquare, 
-  BarChart, CheckCircle, Globe, Code
+  BarChart, CheckCircle, Globe, Code, Phone
 } from "lucide-react";
 
 export default function Header() {
@@ -24,6 +24,14 @@ export default function Header() {
             <Link href="/" className="flex items-center">
               <span className="text-2xl font-bold text-primary">Lume<span className="text-teal-500">Web</span> Studios</span>
             </Link>
+          </div>
+          
+          {/* Phone number - visible on medium screens and up */}
+          <div className="hidden md:flex items-center mr-4">
+            <a href="tel:+13238410348" className="flex items-center text-gray-700 hover:text-primary">
+              <Phone className="h-4 w-4 mr-2" />
+              <span>(323) 841-0348</span>
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -47,7 +55,7 @@ export default function Header() {
               </button>
 
               {/* Services Dropdown */}
-              <div className="hidden group-hover:block absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2" style={{zIndex: 1000}}>
+              <div className="hidden group-hover:block absolute z-10 -ml-4 mt-0 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2" style={{zIndex: 1000}}>
                 <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
                   <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-6 sm:p-8 grid-cols-2">
                     <Link href="/best-los-angeles-web-design" className="flex items-start rounded-lg hover:bg-gray-100 px-3 py-2">
@@ -134,7 +142,7 @@ export default function Header() {
               </button>
 
               {/* Industries Dropdown */}
-              <div className="hidden group-hover:block absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2" style={{zIndex: 1000}}>
+              <div className="hidden group-hover:block absolute z-10 -ml-4 mt-0 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2" style={{zIndex: 1000}}>
                 <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
                   <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                     <Link href="/best-los-angeles-industries-legal" className="flex items-start rounded-lg hover:bg-gray-100 px-3 py-2">
@@ -209,7 +217,7 @@ export default function Header() {
                 <ChevronDown className="ml-1 h-4 w-4" />
               </button>
 
-              <div className="hidden group-hover:block absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2" style={{zIndex: 1000}}>
+              <div className="hidden group-hover:block absolute z-10 -ml-4 mt-0 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2" style={{zIndex: 1000}}>
                 <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
                   <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                     <Link href="/best-los-angeles-free-site-audit" className="flex items-start rounded-lg hover:bg-gray-100 px-3 py-2">
