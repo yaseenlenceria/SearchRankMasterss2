@@ -1,0 +1,19 @@
+# Netlify configuration file
+
+[build]
+  # Use the existing build command from package.json
+  command = "npm run build"
+  # Vite builds to the dist directory
+  publish = "dist"
+
+# Redirects for SPA (Single Page Application)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# For proper API routing if connecting to external APIs
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
