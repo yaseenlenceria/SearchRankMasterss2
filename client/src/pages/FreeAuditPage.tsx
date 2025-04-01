@@ -147,7 +147,7 @@ export default function FreeAuditPage() {
                 </div>
               ) : (
                 <Form {...form}>
-                  <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-5">
+                  <form onSubmit={form.handleSubmit(onSubmit)} action="https://submit-form.com/VvOkPUg6M" className="space-y-5">
                     <FormField
                       control={form.control}
                       name="name"

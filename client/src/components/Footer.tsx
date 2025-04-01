@@ -183,8 +183,18 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/best-los-angeles-seo-audit" className="text-gray-400 hover:text-teal-500">
+                  SEO Audit
+                </Link>
+              </li>
+              <li>
                 <Link href="/best-los-angeles-industries" className="text-gray-400 hover:text-teal-500">
                   All Industries
+                </Link>
+              </li>
+              <li>
+                <Link href="/best-los-angeles-industries-we-serve" className="text-gray-400 hover:text-teal-500">
+                  Industries We Serve
                 </Link>
               </li>
             </ul>

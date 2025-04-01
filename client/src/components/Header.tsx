@@ -236,6 +236,22 @@ export default function Header() {
                       </div>
                     </Link>
                     
+                    <Link href="/best-los-angeles-industries-we-serve" className="flex items-start rounded-lg hover:bg-gray-100 px-3 py-2">
+                      <LayoutGrid className="mt-1 text-primary h-5 w-5" />
+                      <div className="ml-4">
+                        <p className="text-base font-medium text-gray-800">Industries We Serve</p>
+                        <p className="mt-1 text-sm text-gray-600">Industry-specific solutions</p>
+                      </div>
+                    </Link>
+                    
+                    <Link href="/best-los-angeles-request-for-proposal" className="flex items-start rounded-lg hover:bg-gray-100 px-3 py-2">
+                      <MessageSquare className="mt-1 text-primary h-5 w-5" />
+                      <div className="ml-4">
+                        <p className="text-base font-medium text-gray-800">Request for Proposal</p>
+                        <p className="mt-1 text-sm text-gray-600">Get a custom project quote</p>
+                      </div>
+                    </Link>
+                    
                     <Link href="/best-los-angeles-check-my-project" className="flex items-start rounded-lg hover:bg-gray-100 px-3 py-2">
                       <Globe className="mt-1 text-primary h-5 w-5" />
                       <div className="ml-4">
@@ -333,6 +349,12 @@ export default function Header() {
               </Link>
               <Link href="/best-los-angeles-competitive-analysis" className="text-base font-medium text-primary hover:text-primary-800">
                 Competitive Analysis
+              </Link>
+              <Link href="/best-los-angeles-industries-we-serve" className="text-base font-medium text-primary hover:text-primary-800">
+                Industries We Serve
+              </Link>
+              <Link href="/best-los-angeles-privacy-policy" className="text-base font-medium text-primary hover:text-primary-800">
+                Privacy Policy
               </Link>
             </div>
             <div>

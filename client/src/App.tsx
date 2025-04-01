@@ -7,6 +7,12 @@ import IndustryPage from "@/pages/IndustryPage";
 import CaseStudiesPage from "@/pages/CaseStudiesPage";
 import CaseStudyPage from "@/pages/CaseStudyPage";
 import FreeAuditPage from "@/pages/FreeAuditPage";
+import SEOAuditPage from "@/pages/SEOAuditPage";
+import CompetitiveAnalysisPage from "@/pages/CompetitiveAnalysisPage";
+import DisclaimerPage from "@/pages/DisclaimerPage";
+import PrivacyPolicyPage from "@/pages/PrivacyPolicyPage";
+import RequestForProposalPage from "@/pages/RequestForProposalPage";
+import IndustriesWeServePage from "@/pages/IndustriesWeServePage";
 import NotFound from "@/pages/not-found";
 import { services } from "@/data/services";
 import { industries } from "@/data/industries";
@@ -34,7 +40,16 @@ function App() {
         
         {/* Free Audit Page */}
         <Route path="/best-los-angeles-free-site-audit" component={FreeAuditPage} />
-        <Route path="/best-los-angeles-request-for-proposal" component={Contact} />
+        
+        {/* SEO, Analysis, and Proposal Pages */}
+        <Route path="/best-los-angeles-seo-audit" component={SEOAuditPage} />
+        <Route path="/best-los-angeles-competitive-analysis" component={CompetitiveAnalysisPage} />
+        <Route path="/best-los-angeles-request-for-proposal" component={RequestForProposalPage} />
+        <Route path="/best-los-angeles-industries-we-serve" component={IndustriesWeServePage} />
+        
+        {/* Legal Pages */}
+        <Route path="/best-los-angeles-disclaimer" component={DisclaimerPage} />
+        <Route path="/best-los-angeles-privacy-policy" component={PrivacyPolicyPage} />
         
         {/* Service Pages */}
         {services.map((service) => (

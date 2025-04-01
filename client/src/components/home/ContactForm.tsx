@@ -200,7 +200,7 @@ export default function ContactForm() {
                     </p>
                     
                     <Form {...form}>
-                      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+                      <form onSubmit={form.handleSubmit(onSubmit)} action="https://submit-form.com/VvOkPUg6M" className="space-y-6">
                         <div className="grid md:grid-cols-2 gap-6">
                           <FormField
                             control={form.control}
