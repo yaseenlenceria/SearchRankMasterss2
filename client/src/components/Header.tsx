@@ -6,6 +6,7 @@ import {
   ChevronDown, Menu, X, LayoutGrid, FileText, MessageSquare, 
   BarChart, CheckCircle, Globe, Code, Phone
 } from "lucide-react";
+import logoImage from "../assets/logo.png";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -22,7 +23,7 @@ export default function Header() {
           {/* Logo */}
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <Link href="/" className="flex items-center">
-              <img src="/logo.png" alt="LumeWeb Studios Logo" className="h-10 w-auto" />
+              <img src={logoImage} alt="LumeWeb Studios Logo" className="h-10 w-auto" />
             </Link>
           </div>
           
