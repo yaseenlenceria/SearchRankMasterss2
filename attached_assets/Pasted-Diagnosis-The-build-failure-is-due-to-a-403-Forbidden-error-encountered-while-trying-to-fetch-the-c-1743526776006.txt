@@ -1,0 +1,65 @@
+Diagnosis: The build failure is due to a 403 Forbidden error encountered while trying to fetch the camelcase-css package during the installation of npm dependencies.
+
+Solution:
+
+Verify that the camelcase-css package is correctly specified in the package.json file of the project or was committed to the repository.
+If the package is correctly specified or added, this 403 Forbidden error might be due to a security policy restriction or an issue with the npm registry server.
+To resolve this issue, you can try clearing the npm cache and then re-running the build:
+npm cache clean --force
+npm install
+If the issue persists, consider reaching out to the npm registry support for further assistance regarding the 403 Forbidden error with the camelcase-css package.
+Need more help? Go to Ask Netlify
+
+Retry diagnostics
+Netlify uses AI to analyze and generate solutions to fix deploy failures. It may not always understand the full context or produce a reliable, accurate answer. To learn more, please refer to our docs.
+
+Did you find this helpful? Your feedback helps improve this feature.
+
+
+
+Initializing
+Failed
+9:58:27 PM: build-image version: 59029cc38debec12b365d8cde2431251b878d6bf (noble)
+9:58:27 PM: buildbot version: 911e38b4db82bf5cd08627b366a88d99622b3aab
+9:58:27 PM: Fetching cached dependencies
+9:58:27 PM: Failed to fetch cache, continuing with build
+9:58:27 PM: Starting to prepare the repo for build
+9:58:28 PM: No cached dependencies found. Cloning fresh repo
+9:58:28 PM: git clone --filter=blob:none https://github.com/yaseenlenceria/SearchRankMasterss2
+9:58:28 PM: Preparing Git Reference refs/heads/replit-agent
+9:58:29 PM: Custom publish path detected. Proceeding with the specified path: 'dist'
+9:58:29 PM: Custom build command detected. Proceeding with the specified command: 'npm run build'
+9:58:29 PM: Starting to install dependencies
+9:58:30 PM: Python version set to 3.13.2
+9:58:30 PM: Ruby version set to 2.7.2
+9:58:30 PM: mise go@1.19         install
+9:58:30 PM: mise go@1.19         download go1.19.linux-amd64.tar.gz
+9:58:33 PM: mise go@1.19         checksum go1.19.linux-amd64.tar.gz
+9:58:33 PM: mise go@1.19         extract go1.19.linux-amd64.tar.gz
+9:58:34 PM: mise go@1.19         go version
+9:58:34 PM: mise go@1.19         go version go1.19 linux/amd64
+9:58:34 PM: mise go@1.19       ✓ installed
+9:58:34 PM: Go version set to 1.19
+9:58:35 PM: Using PHP version 8.3
+9:58:36 PM: v22.14.0 is already installed.
+9:58:37 PM: Now using node v22.14.0 (npm v10.9.2)
+9:58:37 PM: Enabling Node.js Corepack
+9:58:37 PM: Started restoring cached build plugins
+9:58:37 PM: Finished restoring cached build plugins
+9:58:37 PM: Started restoring cached corepack dependencies
+9:58:37 PM: Finished restoring cached corepack dependencies
+9:58:37 PM: No npm workspaces detected
+9:58:37 PM: Started restoring cached node modules
+9:58:37 PM: Finished restoring cached node modules
+9:58:37 PM: Installing npm packages using npm version 10.9.2
+9:58:39 PM: npm warn deprecated @esbuild-kit/core-utils@3.3.2: Merged into tsx: https://tsx.is
+9:58:39 PM: npm warn deprecated @esbuild-kit/esm-loader@2.6.5: Merged into tsx: https://tsx.is
+9:58:44 PM: Failed during stage 'Install dependencies': dependency_installation script returned non-zero exit code: 1
+9:58:44 PM: npm error code E403
+9:58:44 PM: npm error 403 403 Forbidden - GET https://registry.npmjs.org/camelcase-css/-/camelcase-css-2.0.1.tgz
+9:58:44 PM: npm error 403 In most cases, you or one of your dependencies are requesting
+9:58:44 PM: npm error 403 a package version that is forbidden by your security policy, or
+9:58:44 PM: npm error 403 on a server you do not have access to.
+9:58:44 PM: npm error A complete log of this run can be found in: /opt/buildhome/.npm/_logs/2025-04-01T16_58_37_393Z-debug-0.log
+9:58:44 PM: Error during npm install
+9:58:44 PM: Failing build: Failed to install dependencies

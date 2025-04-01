@@ -1,8 +1,8 @@
 # Netlify configuration file
 
 [build]
-  # Use the existing build command from package.json
-  command = "npm run build"
+  # Use custom build script
+  command = "chmod +x ./netlify.sh && ./netlify.sh"
   # Vite builds to the dist directory
   publish = "dist"
 
