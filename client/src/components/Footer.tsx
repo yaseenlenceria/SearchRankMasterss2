@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { Mail, Phone, MapPin } from "lucide-react";
-
+import logoImage from "../assets/logo.png";
 
 export default function Footer() {
   return (
@@ -10,15 +10,7 @@ export default function Footer() {
           <div className="xl:col-span-1">
             <div className="mb-6">
               <Link href="/" className="flex items-center">
-                <img 
-                  src="/logo-transparent.png" 
-                  alt="LumeWeb Studios Logo" 
-                  className="h-10 w-auto" 
-                  style={{ 
-                    maxHeight: '45px',
-                    objectFit: 'contain'
-                  }} 
-                />
+                <img src={logoImage} alt="LumeWeb Studios Logo" className="h-10 w-auto" />
               </Link>
             </div>
             <div className="space-y-3 mb-6">
