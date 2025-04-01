@@ -2,7 +2,9 @@ import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { cn } from "@/lib/utils";
 import { 
-  Laptop, Search, PenTool, MapPin, ChevronDown, Menu, X
+  Laptop, Search, PenTool, MapPin, BarChart2, Zap, Users, 
+  ChevronDown, Menu, X, LayoutGrid, FileText, MessageSquare, 
+  BarChart, CheckCircle, Globe, Code
 } from "lucide-react";
 
 export default function Header() {
@@ -20,7 +22,7 @@ export default function Header() {
           {/* Logo */}
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <Link href="/" className="flex items-center">
-              <span className="text-2xl font-bold text-primary">Lume<span className="text-orange-500">Web</span> Studios</span>
+              <span className="text-2xl font-bold text-primary">Lume<span className="text-teal-500">Web</span> Studios</span>
             </Link>
           </div>
 
@@ -37,7 +39,7 @@ export default function Header() {
           </div>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex space-x-10">
+          <nav className="hidden md:flex space-x-8">
             <div className="relative group">
               <button className="group py-2 px-1 inline-flex items-center text-base font-medium text-gray-800 hover:text-primary focus:outline-none">
                 <span>Services</span>
@@ -47,12 +49,20 @@ export default function Header() {
               {/* Services Dropdown */}
               <div className="hidden group-hover:block absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
                 <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
-                  <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
+                  <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-6 sm:p-8 grid-cols-2">
                     <Link href="/best-los-angeles-web-design" className="flex items-start rounded-lg hover:bg-gray-100 px-3 py-2">
                       <Laptop className="mt-1 text-primary h-5 w-5" />
                       <div className="ml-4">
                         <p className="text-base font-medium text-gray-800">Web Design</p>
-                        <p className="mt-1 text-sm text-gray-600">Stunning, responsive websites for LA businesses</p>
+                        <p className="mt-1 text-sm text-gray-600">Custom, responsive websites</p>
+                      </div>
+                    </Link>
+                    
+                    <Link href="/best-los-angeles-web-development" className="flex items-start rounded-lg hover:bg-gray-100 px-3 py-2">
+                      <Code className="mt-1 text-primary h-5 w-5" />
+                      <div className="ml-4">
+                        <p className="text-base font-medium text-gray-800">Web Development</p>
+                        <p className="mt-1 text-sm text-gray-600">Custom web applications</p>
                       </div>
                     </Link>
                     
@@ -60,7 +70,15 @@ export default function Header() {
                       <Search className="mt-1 text-primary h-5 w-5" />
                       <div className="ml-4">
                         <p className="text-base font-medium text-gray-800">SEO</p>
-                        <p className="mt-1 text-sm text-gray-600">Boost your rankings with our expert SEO strategies</p>
+                        <p className="mt-1 text-sm text-gray-600">Boost your rankings</p>
+                      </div>
+                    </Link>
+                    
+                    <Link href="/best-los-angeles-local-seo" className="flex items-start rounded-lg hover:bg-gray-100 px-3 py-2">
+                      <MapPin className="mt-1 text-primary h-5 w-5" />
+                      <div className="ml-4">
+                        <p className="text-base font-medium text-gray-800">Local SEO</p>
+                        <p className="mt-1 text-sm text-gray-600">Dominate local searches</p>
                       </div>
                     </Link>
                     
@@ -68,7 +86,31 @@ export default function Header() {
                       <PenTool className="mt-1 text-primary h-5 w-5" />
                       <div className="ml-4">
                         <p className="text-base font-medium text-gray-800">Content Marketing</p>
-                        <p className="mt-1 text-sm text-gray-600">Compelling content that drives engagement</p>
+                        <p className="mt-1 text-sm text-gray-600">Engaging, strategic content</p>
+                      </div>
+                    </Link>
+                    
+                    <Link href="/best-los-angeles-social-media-marketing" className="flex items-start rounded-lg hover:bg-gray-100 px-3 py-2">
+                      <Users className="mt-1 text-primary h-5 w-5" />
+                      <div className="ml-4">
+                        <p className="text-base font-medium text-gray-800">Social Media</p>
+                        <p className="mt-1 text-sm text-gray-600">Build brand engagement</p>
+                      </div>
+                    </Link>
+                    
+                    <Link href="/best-los-angeles-conversion-rate-optimization" className="flex items-start rounded-lg hover:bg-gray-100 px-3 py-2">
+                      <Zap className="mt-1 text-primary h-5 w-5" />
+                      <div className="ml-4">
+                        <p className="text-base font-medium text-gray-800">CRO</p>
+                        <p className="mt-1 text-sm text-gray-600">Turn visitors into customers</p>
+                      </div>
+                    </Link>
+                    
+                    <Link href="/best-los-angeles-ppc-management" className="flex items-start rounded-lg hover:bg-gray-100 px-3 py-2">
+                      <BarChart className="mt-1 text-primary h-5 w-5" />
+                      <div className="ml-4">
+                        <p className="text-base font-medium text-gray-800">PPC Management</p>
+                        <p className="mt-1 text-sm text-gray-600">Maximize ad ROI</p>
                       </div>
                     </Link>
                   </div>
@@ -76,9 +118,7 @@ export default function Header() {
                   <div className="px-5 py-5 bg-gray-100 space-y-6 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8">
                     <div className="flow-root">
                       <Link href="/best-los-angeles-free-site-audit" className="flex items-center px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-200">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-orange-500 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
-                        </svg>
+                        <CheckCircle className="h-5 w-5 text-teal-500 mr-3" />
                         <span>Free Site Audit</span>
                       </Link>
                     </div>
@@ -98,9 +138,7 @@ export default function Header() {
                 <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
                   <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                     <Link href="/best-los-angeles-industries-legal" className="flex items-start rounded-lg hover:bg-gray-100 px-3 py-2">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="mt-1 text-primary h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                      </svg>
+                      <FileText className="mt-1 text-primary h-5 w-5" />
                       <div className="ml-4">
                         <p className="text-base font-medium text-gray-800">Legal</p>
                         <p className="mt-1 text-sm text-gray-600">Law firms, attorneys, legal consultants</p>
@@ -113,17 +151,35 @@ export default function Header() {
                       </svg>
                       <div className="ml-4">
                         <p className="text-base font-medium text-gray-800">Healthcare</p>
-                        <p className="mt-1 text-sm text-gray-600">Doctors, dentists, specialists</p>
+                        <p className="mt-1 text-sm text-gray-600">Doctors, dentists, medical services</p>
                       </div>
                     </Link>
                     
                     <Link href="/best-los-angeles-industries-finance" className="flex items-start rounded-lg hover:bg-gray-100 px-3 py-2">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="mt-1 text-primary h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                      </svg>
+                      <BarChart2 className="mt-1 text-primary h-5 w-5" />
                       <div className="ml-4">
                         <p className="text-base font-medium text-gray-800">Finance</p>
-                        <p className="mt-1 text-sm text-gray-600">Accounting, insurance, financial planning</p>
+                        <p className="mt-1 text-sm text-gray-600">Accounting, insurance, financial services</p>
+                      </div>
+                    </Link>
+
+                    <Link href="/best-los-angeles-industries-education-colleges" className="flex items-start rounded-lg hover:bg-gray-100 px-3 py-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="mt-1 text-primary h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                        <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+                      </svg>
+                      <div className="ml-4">
+                        <p className="text-base font-medium text-gray-800">Education</p>
+                        <p className="mt-1 text-sm text-gray-600">Schools, colleges, educational services</p>
+                      </div>
+                    </Link>
+
+                    <Link href="/best-los-angeles-industries-professional-services" className="flex items-start rounded-lg hover:bg-gray-100 px-3 py-2">
+                      <Users className="mt-1 text-primary h-5 w-5" />
+                      <div className="ml-4">
+                        <p className="text-base font-medium text-gray-800">Professional Services</p>
+                        <p className="mt-1 text-sm text-gray-600">Consultants, agencies, B2B</p>
                       </div>
                     </Link>
                   </div>
@@ -131,9 +187,7 @@ export default function Header() {
                   <div className="px-5 py-5 bg-gray-100 space-y-6 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8">
                     <div className="flow-root">
                       <Link href="/best-los-angeles-industries" className="flex items-center px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-200">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-orange-500 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
-                        </svg>
+                        <LayoutGrid className="h-5 w-5 text-teal-500 mr-3" />
                         <span>All Industries</span>
                       </Link>
                     </div>
@@ -148,6 +202,51 @@ export default function Header() {
             )}>
               Case Studies
             </Link>
+
+            <div className="relative group">
+              <button className="py-2 px-1 inline-flex items-center text-base font-medium text-gray-800 hover:text-primary focus:outline-none">
+                <span>Resources</span>
+                <ChevronDown className="ml-1 h-4 w-4" />
+              </button>
+
+              <div className="hidden group-hover:block absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
+                <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+                  <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
+                    <Link href="/best-los-angeles-free-site-audit" className="flex items-start rounded-lg hover:bg-gray-100 px-3 py-2">
+                      <CheckCircle className="mt-1 text-primary h-5 w-5" />
+                      <div className="ml-4">
+                        <p className="text-base font-medium text-gray-800">Free Site Audit</p>
+                        <p className="mt-1 text-sm text-gray-600">Get a comprehensive site analysis</p>
+                      </div>
+                    </Link>
+                    
+                    <Link href="/best-los-angeles-seo-audit" className="flex items-start rounded-lg hover:bg-gray-100 px-3 py-2">
+                      <Search className="mt-1 text-primary h-5 w-5" />
+                      <div className="ml-4">
+                        <p className="text-base font-medium text-gray-800">SEO Audit</p>
+                        <p className="mt-1 text-sm text-gray-600">Discover SEO opportunities</p>
+                      </div>
+                    </Link>
+                    
+                    <Link href="/best-los-angeles-competitive-analysis" className="flex items-start rounded-lg hover:bg-gray-100 px-3 py-2">
+                      <BarChart className="mt-1 text-primary h-5 w-5" />
+                      <div className="ml-4">
+                        <p className="text-base font-medium text-gray-800">Competitive Analysis</p>
+                        <p className="mt-1 text-sm text-gray-600">Stand out from your competition</p>
+                      </div>
+                    </Link>
+                    
+                    <Link href="/best-los-angeles-check-my-project" className="flex items-start rounded-lg hover:bg-gray-100 px-3 py-2">
+                      <Globe className="mt-1 text-primary h-5 w-5" />
+                      <div className="ml-4">
+                        <p className="text-base font-medium text-gray-800">Check My Project</p>
+                        <p className="mt-1 text-sm text-gray-600">Get expert feedback</p>
+                      </div>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
             
             <Link href="/contact-us" className={cn(
               "py-2 px-1 text-base font-medium text-gray-800 hover:text-primary",
@@ -162,7 +261,7 @@ export default function Header() {
             <Link href="/best-los-angeles-free-site-audit" className="whitespace-nowrap text-base font-medium text-primary hover:text-primary-800">
               Free Audit
             </Link>
-            <Link href="/contact-us" className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-orange-500 hover:bg-orange-600">
+            <Link href="/best-los-angeles-request-for-proposal" className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-teal-600 hover:bg-teal-700">
               Get Started
             </Link>
           </div>
@@ -189,23 +288,22 @@ export default function Header() {
                 </Link>
                 
                 <Link href="/best-los-angeles-industries" className="flex items-center p-3 rounded-md hover:bg-gray-100">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="text-primary h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
-                  </svg>
+                  <LayoutGrid className="text-primary h-5 w-5" />
                   <span className="ml-3 text-base font-medium text-gray-800">Industries</span>
                 </Link>
                 
                 <Link href="/best-los-angeles-case-studies" className="flex items-center p-3 rounded-md hover:bg-gray-100">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="text-primary h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                  </svg>
+                  <FileText className="text-primary h-5 w-5" />
                   <span className="ml-3 text-base font-medium text-gray-800">Case Studies</span>
                 </Link>
                 
+                <Link href="/best-los-angeles-free-site-audit" className="flex items-center p-3 rounded-md hover:bg-gray-100">
+                  <CheckCircle className="text-primary h-5 w-5" />
+                  <span className="ml-3 text-base font-medium text-gray-800">Free Audit</span>
+                </Link>
+                
                 <Link href="/contact-us" className="flex items-center p-3 rounded-md hover:bg-gray-100">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="text-primary h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                  </svg>
+                  <MessageSquare className="text-primary h-5 w-5" />
                   <span className="ml-3 text-base font-medium text-gray-800">Contact</span>
                 </Link>
               </nav>
@@ -214,13 +312,16 @@ export default function Header() {
           
           <div className="py-6 px-5 space-y-6">
             <div className="grid grid-cols-2 gap-y-4 gap-x-8">
-              <Link href="/best-los-angeles-free-site-audit" className="text-base font-medium text-primary hover:text-primary-800">
-                Free Site Audit
+              <Link href="/best-los-angeles-seo-audit" className="text-base font-medium text-primary hover:text-primary-800">
+                SEO Audit
+              </Link>
+              <Link href="/best-los-angeles-competitive-analysis" className="text-base font-medium text-primary hover:text-primary-800">
+                Competitive Analysis
               </Link>
             </div>
             <div>
-              <Link href="/contact-us" className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-orange-500 hover:bg-orange-600">
-                Get Started
+              <Link href="/best-los-angeles-request-for-proposal" className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-teal-600 hover:bg-teal-700">
+                Request Proposal
               </Link>
             </div>
           </div>

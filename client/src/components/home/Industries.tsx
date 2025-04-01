@@ -1,47 +1,77 @@
 import { Link } from "wouter";
 import { industries } from "@/data/industries";
+import { ArrowRight } from "lucide-react";
 
 export default function Industries() {
   return (
-    <section className="py-16 bg-gray-100">
+    <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Industries We Serve</h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            We specialize in helping businesses across various industries in Los Angeles.
+          <h2 className="section-heading">Industries We Serve</h2>
+          <p className="section-subheading">
+            We specialize in helping businesses across various industries in Los Angeles achieve remarkable results online.
           </p>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8">
-          {industries.slice(0, 3).map((industry) => (
-            <Link key={industry.slug} href={`/best-los-angeles-industries-${industry.slug}`} className="group">
-              <div className="relative h-64 overflow-hidden rounded-lg shadow-md">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+          {industries.slice(0, 6).map((industry) => (
+            <Link 
+              key={industry.slug} 
+              href={`/best-los-angeles-industries-${industry.slug}`} 
+              className="group block relative overflow-hidden rounded-xl subtle-shadow hover:shadow-xl card-hover"
+            >
+              <div className="relative h-72 overflow-hidden">
                 <img 
                   src={industry.imageUrl} 
-                  alt={`${industry.name} industry`} 
-                  className="w-full h-full object-cover transition-all transform group-hover:scale-105"
+                  alt={`${industry.name} industry digital marketing solutions Los Angeles`} 
+                  className="w-full h-full object-cover transition-all duration-500 transform group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-80"></div>
-                <div className="absolute bottom-0 left-0 p-6">
-                  <h3 className="text-xl font-bold text-white mb-2">{industry.name}</h3>
-                  <p className="text-gray-300">{industry.shortDescription}</p>
-                  <span className="mt-4 inline-block text-orange-400 group-hover:text-orange-300">Learn more →</span>
+                
+                {/* Overlay gradient */}
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/70 to-transparent opacity-90"></div>
+                
+                {/* Content */}
+                <div className="absolute bottom-0 left-0 p-8 w-full">
+                  <div className="w-12 h-1 bg-teal-400 mb-4 transition-all duration-300 group-hover:w-16"></div>
+                  <h3 className="text-2xl font-bold text-white mb-3">{industry.name}</h3>
+                  <p className="text-gray-300 mb-4 line-clamp-2">{industry.shortDescription}</p>
+                  <span className="inline-flex items-center text-teal-300 font-medium transition-all duration-300 group-hover:translate-x-2">
+                    View Solutions
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </span>
                 </div>
               </div>
             </Link>
           ))}
         </div>
         
-        <div className="text-center mt-12">
+        <div className="text-center mt-14">
           <Link 
             href="/best-los-angeles-industries" 
-            className="inline-flex items-center py-3 px-6 bg-primary hover:bg-blue-700 text-white font-medium rounded-md shadow-md transition-all"
+            className="inline-flex items-center py-3 px-6 bg-white border-2 border-primary text-primary hover:bg-primary/5 font-medium rounded-md shadow-sm transition-all"
           >
             View All Industries 
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
-              <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
-            </svg>
+            <ArrowRight className="ml-2 h-5 w-5" />
           </Link>
+        </div>
+      </div>
+      
+      {/* Industry expertise highlight */}
+      <div className="mt-20 py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <h3 className="text-2xl md:text-3xl font-bold mb-6">Industry-Specific Digital Strategies</h3>
+            <p className="text-gray-600 mb-8">
+              Our team understands the unique challenges and opportunities in your industry. We develop tailored digital solutions that address your specific needs and help you stand out from competitors.
+            </p>
+            <Link 
+              href="/best-los-angeles-successful-website-for-your-business" 
+              className="inline-flex items-center py-3 px-6 bg-gradient-brand text-white font-medium rounded-md shadow-md hover:shadow-lg transition-all"
+            >
+              Learn Our Approach
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Link>
+          </div>
         </div>
       </div>
     </section>
